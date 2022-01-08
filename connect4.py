@@ -12,11 +12,11 @@ class connect4:
         self.player = 0
         self.game_over = False
         self.winner = -2
+        
     def initial_position(self, s):
         '''Creates starting position for board 
         '''
         
-
     def legal_moves(self):
             '''Returns the legal moves from a given position
             '''
@@ -67,8 +67,7 @@ class connect4:
                 break
 
         return full 
-
-
+    
     def win(self, column):
         '''
         Returns the winning if there was a win after a specific move, otherwise return -1
