@@ -3,7 +3,7 @@ class connect4:
     def __init__(self):
         '''
             Creates a connect 4 board
-            '.' represents an empty position
+            'x' represents an empty position
         '''
         self.height = 6
         self.width = 7
