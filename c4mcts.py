@@ -13,12 +13,10 @@ class Node:
         self.visits = 0
         self.move = 0
 
-#player is the player about to make a move 
 def mcts_strategy(iterations):
-    #given the children of a node, return the index of the node to explore using the upper confidence bound
     playouts = 0
-    #given the children of a node, return the index of the node to explore using UCB if player 1
     
+    #given the children of a node, return the index of the node to explore using UCB if player 1
     def player1Choice(children):
         maxIndex = 0
         maxVal = -100
@@ -103,7 +101,6 @@ def mcts_strategy(iterations):
         root = Node(position)
         playouts = 0
         #driver loop
-       
         while playouts < iterations:
             leaf = traverse(root)
             retNode = rollout(leaf)
@@ -113,6 +110,7 @@ def mcts_strategy(iterations):
         maxReward = 0
         minReward = 1000
         index = 0
+        
         #finding the move that either optimizes or minimizes player 1 reward (optimize if p1, minimize if p2)
         if(root.position.player == 0):
             for i in range(len(root.children)):
