@@ -35,8 +35,6 @@ def play():
     position = connect4()
     p1 = c4mcts.mcts_strategy
     play_against_agent(lambda: p1(int(sys.argv[1])), position)
-    
-
 
 if __name__ == '__main__':
     play()
