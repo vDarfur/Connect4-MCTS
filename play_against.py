@@ -1,6 +1,6 @@
 #Here you can play against an MCTS agent
-#To run this program: 'pypy3 play_against.py numsimulations' where numiterations is the amount of simulations you want the agent to do
-#The agent will go first. To select your move, just hit the column you would like to play
+#To run this program: 'pypy3 play_against.py numsimulations' where numsimulations is the amount of simulations you want the agent to do
+#The agent will go first. To select your move, type the index of the column you would like to play
 #Good Luck!
 
 import random
