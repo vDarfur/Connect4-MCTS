@@ -20,7 +20,6 @@ def random_choice(position):
     moves = position.legal_moves
     return random.choice(moves)
 
-
 def compare_against_random(p1, games, initial_position):
     mcts_agent_wins = 0
     random_play_wins = 0 
